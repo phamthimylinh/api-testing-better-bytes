@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "191b8613-6a04-453a-9f9f-8bd62040529d",
+		"name": "Academy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27157391"
+	},
+	"item": [
+		{
+			"name": "API TESTING",
+			"item": [
+				{
+					"name": "lesson-4",
+					"item": [
+						{
+							"name": "auth",
+							"item": [
+								{
+									"name": "user login",
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "authors",
+							"item": []
+						},
+						{
+							"name": "books",
+							"item": []
+						},
+						{
+							"name": "collections",
+							"item": []
+						},
+						{
+							"name": "languages",
+							"item": []
+						},
+						{
+							"name": "reviews",
+							"item": []
+						},
+						{
+							"name": "users",
+							"item": []
+						}
+					]
+				},
+				{
+					"name": "L3.2.1",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "basic ewogICJhdXRoZW50aWNhdGVkIjogdHJ1ZSwgCiAgInVzZXIiOiAiYmJhX2FjYWRlbXkiCn0K",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://httpbin.org/basic-auth/bba_academy/a101_class_secret",
+							"protocol": "https",
+							"host": [
+								"httpbin",
+								"org"
+							],
+							"path": [
+								"basic-auth",
+								"bba_academy",
+								"a101_class_secret"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "L3.2.3-api-key",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "###",
+								"description": "####",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Lesson 03: exercise\",\n    \"body\": \"Please fill the key-takeway.md file\",\n    \"labels\": [\"exercise\", \"missing\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.github.com/repos/phamthimylinh/api-testing-better-bytes/issues",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"phamthimylinh",
+								"api-testing-better-bytes",
+								"issues"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
