@@ -1,0 +1,24 @@
+- xml
+    <hanhtinh>Kepler-22b</hanhtinh>
+    <khoangcach>587</khoangcach>
+    <cothesinhsong>true</cothesinhsong>
+    <cacquocgia>
+        <vietnam></vietnam>
+        <campuchia></campuchia>
+        <thailan></thailan>
+    </cacquocgia>
+
+- json
+{
+    "hanhtinh": "Kepler-22b",
+    "khoangcach": 587,
+    "cothesinhsong": true,
+    "quocgia": {
+        "vietnam": true,
+        "thailan": true,
+        "campuchia": true
+    }
+}
+
+- 2. giải thích
+Dữ liệu json ngắn gọn hơn so với xml => file dữ liệu truyền đi nhỏ hơn
